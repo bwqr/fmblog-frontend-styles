@@ -1,0 +1,29 @@
+// define 3 theme color
+// mat-palette accepts $palette-name, main, lighter and darker variants
+$my-theme-primary: mat-palette($mat-blue, 700, 300, 900);
+$my-theme-accent: mat-palette($mat-blue, 900);
+$my-theme-warn: mat-palette($mat-red, 700);
+
+// create theme (use mat-dark-theme for themes with dark backgrounds)
+$light-bluish-theme: mat-light-theme(
+    $my-theme-primary,
+    $my-theme-accent,
+    $my-theme-warn
+);
+
+// $body-background-color: #303030;
+$text-color: #202020;
+// $mat-toolbar-color: white;
+// $mat-toolbar-background: #212121;
+$side-nav: map_get($mat-blue, 900);
+
+//Bulma
+// $menu-item-color: white;
+// $menu-item-hover-background-color: rgba(0, 0, 0, .3);
+// $table-background-color: transparent;
+// $table-color: white;
+// $table-head-cell-color: white;
+// $table-row-hover-background-color: grey;
+
+// $grey-darker: hsl(0, 0%, 100%);
+// $link: #81d4fa;

@@ -7,7 +7,7 @@ mat-sidenav {
 }
 #snav{
     box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
-    background-color: #031b4d;
+    background-color:  $side-nav;//#031b4d;
 
     .mat-list-item {
         height: auto;
