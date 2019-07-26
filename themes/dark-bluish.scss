@@ -4,14 +4,17 @@ $my-theme-primary: mat-palette($mat-blue, 700, 300, 900);
 $my-theme-accent: mat-palette($mat-blue, 900);
 $my-theme-warn: mat-palette($mat-red, 700);
 
+// general variables
+$card-background: map_get($mat-grey,900);
+
 // Background palette for dark themes.
 $mat-dark-theme-background: (
   status-bar: black,
   app-bar:    map_get($mat-grey, 900),
   background: #282828,
   hover:      rgba(white, 0.04), // TODO(kara): check style with Material Design UX
-  card:       map_get($mat-grey, 900),
-  dialog:     map_get($mat-grey, 900),
+  card:       $card-background,
+  dialog:     $card-background,
   disabled-button: rgba(white, 0.12),
   raised-button: map-get($mat-grey, 800),
   focused-button: $light-focused,
@@ -42,6 +45,8 @@ $table-background-color: transparent;
 $table-color: white;
 $table-head-cell-color: white;
 $table-row-hover-background-color: grey;
+$table-cell-border: 1px solid grey;
+$card-background-color: lighten($card-background, 10%);
 
 $grey-darker: hsl(0, 0%, 100%);
 $link: #81d4fa;
