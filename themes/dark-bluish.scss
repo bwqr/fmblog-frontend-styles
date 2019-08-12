@@ -40,12 +40,15 @@ $side-nav: map_get($mat-blue, 900);
 
 //Bulma
 $menu-item-color: white;
+$title-color: $text-color;
+$subtitle-color: darken($text-color, 10%);
 $menu-item-hover-background-color: rgba(0, 0, 0, .3);
 $table-background-color: transparent;
 $table-color: white;
 $table-head-cell-color: white;
 $table-row-hover-background-color: grey;
 $table-cell-border: 1px solid grey;
+$hr-background-color: grey;
 $card-background-color: lighten($card-background, 10%);
 
 $grey-darker: hsl(0, 0%, 100%);
